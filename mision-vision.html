@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misión y Visión | SkySip</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <img src="Agregar un subtítulo-2.png" alt="Logo SkySip">
+      </div>
+      <nav>
+        <button id="menu-toggle">☰ Menú</button>
+        <ul id="menu" class="hidden">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="mision-vision.html">Misión y Visión</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="solucion.html">Solución</a></li>
+        </ul>
+        <ul class="menu-desktop">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="mision-vision.html">Misión y Visión</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="solucion.html">Solución</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1>Nuestra Misión y Visión</h1>
+        <p><strong>Misión:</strong> Proveer una alternativa accesible y sostenible de acceso al agua mediante tecnologías que capturan la humedad del ambiente.<br><br><strong>Visión:</strong> Ser líderes en innovación hídrica en Latinoamérica, impactando comunidades que enfrentan escasez de agua y promoviendo el uso responsable de los recursos.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 SkySip. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        menu.classList.add("hidden");
+      }
+    });
+  </script>
+</body>
+</html>

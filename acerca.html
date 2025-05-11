@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de | SkySip</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <img src="Agregar un subtítulo-2.png" alt="Logo SkySip">
+      </div>
+      <nav>
+        <button id="menu-toggle">☰ Menú</button>
+        <ul id="menu" class="hidden">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="mision-vision.html">Misión y Visión</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="solucion.html">Solución</a></li>
+        </ul>
+        <ul class="menu-desktop">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="mision-vision.html">Misión y Visión</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="solucion.html">Solución</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1>¿Quiénes somos?</h1>
+        <p>Somos un equipo multidisciplinario comprometido con el desarrollo de soluciones tecnológicas para enfrentar el estrés hídrico. Creemos que el acceso al agua debe ser un derecho y no un privilegio.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 SkySip. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        menu.classList.add("hidden");
+      }
+    });
+  </script>
+</body>
+</html>
